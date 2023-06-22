@@ -1,0 +1,160 @@
+:root {
+  --cor-primaria: #0A0E3F;
+  --cor-secundaria: #322c5e;
+  --cor-gradient-inicio: #39336a;
+  --cor-gradient-fim: #1e1c50;
+  --cor-texto: #FFFFFF;
+  --cor-input: #e0e0e0;
+  --cor-destaque: #8A2BE2;
+  --cor-destaque2: #B94DD4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom left, var(--cor-gradient-inicio), var(--cor-gradient-fim));
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+
+}
+
+header {
+  margin-bottom: 20px;
+  background-color: #1e1c50;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50px;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  font-size: 26px;
+}
+
+#cor_texto {
+  color: #8A2BE2;
+}
+
+
+h2 {
+  font-size: 25px;
+  color: #c226e9e0;
+  margin-bottom: 20px;
+
+}
+
+.equipe {
+  text-align: center;
+  font-size: 32px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  list-style: none;
+
+}
+
+.fotos {
+  position: relative;
+  top: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--cor-secundaria);
+  font-size: 14px;
+}
+
+/* Estilos adicionais para personalização */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--cor-primaria);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  flex-grow: 1;
+}
+
+section {
+  border-top: 1px solid var(--cor-destaque);
+  padding-top: 20px;
+}
+
+.valores:before {
+  content: "•";
+  color: var(--cor-destaque);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes>a {
+  padding: 10px;
+
+}
+
+a>i {
+  font-size: 20px;
+  transition: 0.2s ease;
+  color: white;
+}
+
+#instagram>i:hover {
+  color: #E4405F;
+  transform: scale(1.2);
+}
+
+#github>i:hover {
+  color: black;
+  transform: scale(1.2);
+}
